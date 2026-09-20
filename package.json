@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-  "build": "tsdown src/server.ts --format esm --clean --minify",
-  "dev": "tsx watch src/server.ts",
-  "start": "node dist/server.mjs",
-  "db:generate": "prisma contract emit",
-  "db:migrate": "prisma db migrate",
-  "lint": "eslint .",
-  "contract:emit": "prisma contract emit"
-},
+    "scripts": {
+    "build": "tsdown src/server.ts --format esm --clean --minify",
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/server.mjs",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "lint": "eslint .",
+    "contract:emit": "prisma contract emit"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
