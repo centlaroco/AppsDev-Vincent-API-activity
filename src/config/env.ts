@@ -8,5 +8,5 @@ export const env = {
   JWT_SECRET: process.env.JWT_SECRET || 'fallback_secret_change_me',
   FRONTEND_URL: process.env.FRONTEND_URL || 'http://localhost:3000',
   BACKEND_URL: process.env.BACKEND_URL || 'http://localhost:7000',
-  DATABASE_URL: process.env.DATABASE_URL || 'postgresql://postgres:mypassword@localhost:5432/appsdev'
+  DATABASE_URL: process.env.DATABASE_URL,
 };
